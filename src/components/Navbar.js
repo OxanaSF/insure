@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/images/logo.svg";
-import Humburger from "../../assets/images/icon-hamburger.svg";
-import Close from "../../assets/images/icon-close.svg";
-import { routes } from "../NavbarItems/NavbarItems";
+import Logo from "../assets/images/logo.svg";
+import Humburger from "../assets/images/icon-hamburger.svg";
+import Close from "../assets/images/icon-close.svg";
+import { routes } from "./NavbarItems";
 import styled from "styled-components";
 
 const Navbar = () => {
