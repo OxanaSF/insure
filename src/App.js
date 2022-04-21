@@ -1,5 +1,4 @@
 
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home'
@@ -7,12 +6,13 @@ import HowWeWork from './pages/HowWeWork'
 import Blog from './pages/Blog'
 import Account from './pages/Account'
 import ViewPlans from './pages/ViewPlans';
+import GlobalStyle from "./components/GlobalStyle";
 
 
 function App() {
   return (
     <div className="App">
-
+      <GlobalStyle />
 
     <Router>
     <Navbar />
