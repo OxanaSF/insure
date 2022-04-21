@@ -1,5 +1,5 @@
 import React from "react";
-import { cards } from "./data";
+import { cards } from "./middleCompData";
 import Card from "./Card";
 import styled from "styled-components";
 

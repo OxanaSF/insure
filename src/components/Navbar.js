@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/images/logo.svg";
 import Humburger from "../assets/images/icon-hamburger.svg";
 import Close from "../assets/images/icon-close.svg";
 import { routes } from "./NavbarItems";
 import styled from "styled-components";
+import Logo from "./Logo"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
     <div>
       <NavbarStyled>
         <NavLink to="/">
-          <img src={Logo} className="logo" alt="insure" />
+          <Logo />
         </NavLink>
 
         <div className="menu">
@@ -42,9 +42,9 @@ const NavbarStyled = styled.nav`
   align-items: center;
   padding: 1.5rem 10rem;
 
-  .logo {
+  /* .logo {
     width: 10rem;
-  }
+  } */
 
   .menu {
     display: flex;

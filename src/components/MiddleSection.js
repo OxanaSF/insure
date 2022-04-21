@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import patternWeWork from "../../src/assets/images/bg-pattern-how-we-work-desktop.svg";
 import CardDisplay from "./CardDisplay";
+import { NavLink } from "react-router-dom";
 
 const MiddleSection = () => {
   return (
@@ -15,7 +16,9 @@ const MiddleSection = () => {
           Find out more
           <br /> about how we work
         </div>
-        <button>How we work</button>
+        <NavLink class="button" to="/work">
+          <button>How we work</button>
+        </NavLink>
       </BannerStyled>
     </MiddleSectionStyled>
   );
@@ -52,15 +55,23 @@ const BannerStyled = styled.div`
   background-repeat: no-repeat;
   background-position: center right;
 
-  button {
-    width: 15%;
+  a {
+    /* width: 15%; */
     background: transparent;
     border: none;
     color: hsl(0, 0%, 98%);
     border: 0.15rem solid hsl(0, 0%, 98%);
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
+    /* padding: 1rem 2rem; */
+    font-size: 1rem;
     letter-spacing: 0.1rem;
+    
+  }
+  button {
+    background: transparent;
+    border: none;
+    color: hsl(0, 0%, 98%);
+    padding: 1rem 2rem;
+    cursor: pointer;
     text-transform: uppercase;
   }
 `;

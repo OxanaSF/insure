@@ -56,7 +56,7 @@ const HeaderStyled = styled.section`
 
   .purple-background {
     background-color: hsl(256, 26%, 20%);
-    height: 65%;
+    height: 63%;
     position: absolute;
     top: 0;
     left: 0;
